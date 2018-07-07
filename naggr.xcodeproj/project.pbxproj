@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB2211410666386E1D5DB124 /* libPods-naggr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 982C6EAA85DC7F2A3F85E9D1 /* libPods-naggr.a */; };
 		DD60CADA20F0E36100CECFED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD60CAD920F0E36100CECFED /* AppDelegate.swift */; };
-		DD60CADC20F0E36100CECFED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD60CADB20F0E36100CECFED /* ViewController.swift */; };
+		DD60CADC20F0E36100CECFED /* HomePagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD60CADB20F0E36100CECFED /* HomePagerViewController.swift */; };
 		DD60CADF20F0E36100CECFED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD60CADD20F0E36100CECFED /* Main.storyboard */; };
 		DD60CAE120F0E36300CECFED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD60CAE020F0E36300CECFED /* Assets.xcassets */; };
 		DD60CAE420F0E36300CECFED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD60CAE220F0E36300CECFED /* LaunchScreen.storyboard */; };
 		DD8B9FAA20F0EBC00074A82F /* Reclame.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD8B9FA920F0EBC00074A82F /* Reclame.ttf */; };
+		DD8B9FAC20F0F4290074A82F /* Nag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8B9FAB20F0F4290074A82F /* Nag.swift */; };
+		DD8B9FAE20F0FA1B0074A82F /* NagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8B9FAD20F0FA1B0074A82F /* NagViewController.swift */; };
+		DD8B9FB020F109770074A82F /* testContact.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD8B9FAF20F109770074A82F /* testContact.jpg */; };
+		DD8B9FB420F144C80074A82F /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8B9FB320F144C80074A82F /* NavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		100F18C77111A471C010163F /* Pods-naggr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-naggr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-naggr/Pods-naggr.debug.xcconfig"; sourceTree = "<group>"; };
+		24F9313A53B2230F133E48F0 /* Pods-naggr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-naggr.release.xcconfig"; path = "Pods/Target Support Files/Pods-naggr/Pods-naggr.release.xcconfig"; sourceTree = "<group>"; };
+		982C6EAA85DC7F2A3F85E9D1 /* libPods-naggr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-naggr.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD60CAD620F0E36100CECFED /* naggr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = naggr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD60CAD920F0E36100CECFED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD60CADB20F0E36100CECFED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD60CADB20F0E36100CECFED /* HomePagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePagerViewController.swift; sourceTree = "<group>"; };
 		DD60CADE20F0E36100CECFED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD60CAE020F0E36300CECFED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD60CAE320F0E36300CECFED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD60CAE520F0E36300CECFED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD8B9FA920F0EBC00074A82F /* Reclame.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Reclame.ttf; sourceTree = "<group>"; };
+		DD8B9FAB20F0F4290074A82F /* Nag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nag.swift; sourceTree = "<group>"; };
+		DD8B9FAD20F0FA1B0074A82F /* NagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NagViewController.swift; sourceTree = "<group>"; };
+		DD8B9FAF20F109770074A82F /* testContact.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testContact.jpg; sourceTree = "<group>"; };
+		DD8B9FB320F144C80074A82F /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB2211410666386E1D5DB124 /* libPods-naggr.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83CDE6F0555F053615CE9FA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				100F18C77111A471C010163F /* Pods-naggr.debug.xcconfig */,
+				24F9313A53B2230F133E48F0 /* Pods-naggr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DD60CACD20F0E36100CECFED = {
 			isa = PBXGroup;
 			children = (
 				DD60CAD820F0E36100CECFED /* naggr */,
 				DD60CAD720F0E36100CECFED /* Products */,
+				83CDE6F0555F053615CE9FA2 /* Pods */,
+				E456828A85FE6C10491E5B5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +96,7 @@
 		DD60CAEB20F0E90800CECFED /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DD8B9FAF20F109770074A82F /* testContact.jpg */,
 				DD8B9FA920F0EBC00074A82F /* Reclame.ttf */,
 			);
 			path = Resources;
@@ -80,7 +105,9 @@
 		DD60CAEC20F0E91300CECFED /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DD60CADB20F0E36100CECFED /* ViewController.swift */,
+				DD60CADB20F0E36100CECFED /* HomePagerViewController.swift */,
+				DD8B9FAD20F0FA1B0074A82F /* NagViewController.swift */,
+				DD8B9FB320F144C80074A82F /* NavigationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -88,6 +115,7 @@
 		DD60CAED20F0E94700CECFED /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DD8B9FAB20F0F4290074A82F /* Nag.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -99,6 +127,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		E456828A85FE6C10491E5B5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				982C6EAA85DC7F2A3F85E9D1 /* libPods-naggr.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +142,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD60CAE820F0E36300CECFED /* Build configuration list for PBXNativeTarget "naggr" */;
 			buildPhases = (
+				9B9A7184C9BC6F0E8763B21D /* [CP] Check Pods Manifest.lock */,
 				DD60CAD220F0E36100CECFED /* Sources */,
 				DD60CAD320F0E36100CECFED /* Frameworks */,
 				DD60CAD420F0E36100CECFED /* Resources */,
@@ -160,19 +197,44 @@
 				DD8B9FAA20F0EBC00074A82F /* Reclame.ttf in Resources */,
 				DD60CAE420F0E36300CECFED /* LaunchScreen.storyboard in Resources */,
 				DD60CAE120F0E36300CECFED /* Assets.xcassets in Resources */,
+				DD8B9FB020F109770074A82F /* testContact.jpg in Resources */,
 				DD60CADF20F0E36100CECFED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9B9A7184C9BC6F0E8763B21D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-naggr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD60CAD220F0E36100CECFED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD60CADC20F0E36100CECFED /* ViewController.swift in Sources */,
+				DD8B9FB420F144C80074A82F /* NavigationViewController.swift in Sources */,
+				DD60CADC20F0E36100CECFED /* HomePagerViewController.swift in Sources */,
 				DD60CADA20F0E36100CECFED /* AppDelegate.swift in Sources */,
+				DD8B9FAC20F0F4290074A82F /* Nag.swift in Sources */,
+				DD8B9FAE20F0FA1B0074A82F /* NagViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +376,7 @@
 		};
 		DD60CAE920F0E36300CECFED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 100F18C77111A471C010163F /* Pods-naggr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -333,6 +396,7 @@
 		};
 		DD60CAEA20F0E36300CECFED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24F9313A53B2230F133E48F0 /* Pods-naggr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
