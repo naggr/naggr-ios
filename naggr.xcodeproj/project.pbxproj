@@ -12,6 +12,7 @@
 		DD60CADF20F0E36100CECFED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD60CADD20F0E36100CECFED /* Main.storyboard */; };
 		DD60CAE120F0E36300CECFED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD60CAE020F0E36300CECFED /* Assets.xcassets */; };
 		DD60CAE420F0E36300CECFED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD60CAE220F0E36300CECFED /* LaunchScreen.storyboard */; };
+		DD8B9FAA20F0EBC00074A82F /* Reclame.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD8B9FA920F0EBC00074A82F /* Reclame.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DD60CAE020F0E36300CECFED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD60CAE320F0E36300CECFED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD60CAE520F0E36300CECFED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD8B9FA920F0EBC00074A82F /* Reclame.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Reclame.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		DD60CAD820F0E36100CECFED /* naggr */ = {
 			isa = PBXGroup;
 			children = (
+				DD60CAEE20F0E97A00CECFED /* Utils */,
+				DD60CAED20F0E94700CECFED /* Models */,
+				DD60CAEC20F0E91300CECFED /* Controllers */,
+				DD60CAEB20F0E90800CECFED /* Resources */,
 				DD60CAD920F0E36100CECFED /* AppDelegate.swift */,
-				DD60CADB20F0E36100CECFED /* ViewController.swift */,
 				DD60CADD20F0E36100CECFED /* Main.storyboard */,
 				DD60CAE020F0E36300CECFED /* Assets.xcassets */,
 				DD60CAE220F0E36300CECFED /* LaunchScreen.storyboard */,
 				DD60CAE520F0E36300CECFED /* Info.plist */,
 			);
 			path = naggr;
+			sourceTree = "<group>";
+		};
+		DD60CAEB20F0E90800CECFED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD8B9FA920F0EBC00074A82F /* Reclame.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DD60CAEC20F0E91300CECFED /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD60CADB20F0E36100CECFED /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DD60CAED20F0E94700CECFED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD60CAEE20F0E97A00CECFED /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD8B9FAA20F0EBC00074A82F /* Reclame.ttf in Resources */,
 				DD60CAE420F0E36300CECFED /* LaunchScreen.storyboard in Resources */,
 				DD60CAE120F0E36300CECFED /* Assets.xcassets in Resources */,
 				DD60CADF20F0E36100CECFED /* Main.storyboard in Resources */,
