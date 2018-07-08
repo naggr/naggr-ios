@@ -6,14 +6,10 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Reclame.ttf">
-            <string>Reclame</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -23,17 +19,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naggr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gg1-tq-hAU">
-                                <rect key="frame" x="107" y="283" width="161" height="100"/>
-                                <fontDescription key="fontDescription" name="Reclame" family="Reclame" pointSize="100"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="naggrLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="TKu-Kf-2TO">
+                                <rect key="frame" x="60" y="265" width="255" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TKu-Kf-2TO" secondAttribute="height" multiplier="15:8" id="AfZ-Gq-ivc"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.396078431372549" green="0.66274509803921566" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Gg1-tq-hAU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="LVv-H6-A2X"/>
-                            <constraint firstItem="Gg1-tq-hAU" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="gCj-xf-FfY"/>
+                            <constraint firstItem="TKu-Kf-2TO" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="B90-hn-NRu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TKu-Kf-2TO" secondAttribute="trailing" constant="60" id="LFF-T5-b7G"/>
+                            <constraint firstItem="TKu-Kf-2TO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="uvv-90-DEb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -43,4 +40,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="naggrLogo.png" width="668" height="372"/>
+    </resources>
 </document>

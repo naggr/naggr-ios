@@ -13,6 +13,7 @@
 		DD60CADF20F0E36100CECFED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD60CADD20F0E36100CECFED /* Main.storyboard */; };
 		DD60CAE120F0E36300CECFED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD60CAE020F0E36300CECFED /* Assets.xcassets */; };
 		DD60CAE420F0E36300CECFED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD60CAE220F0E36300CECFED /* LaunchScreen.storyboard */; };
+		DD744A4820F1859C00C67586 /* naggrLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = DD744A4720F1859C00C67586 /* naggrLogo.png */; };
 		DD8B9FAA20F0EBC00074A82F /* Reclame.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD8B9FA920F0EBC00074A82F /* Reclame.ttf */; };
 		DD8B9FAC20F0F4290074A82F /* Nag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8B9FAB20F0F4290074A82F /* Nag.swift */; };
 		DD8B9FAE20F0FA1B0074A82F /* NagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8B9FAD20F0FA1B0074A82F /* NagViewController.swift */; };
@@ -31,6 +32,7 @@
 		DD60CAE020F0E36300CECFED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD60CAE320F0E36300CECFED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD60CAE520F0E36300CECFED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD744A4720F1859C00C67586 /* naggrLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = naggrLogo.png; sourceTree = "<group>"; };
 		DD8B9FA920F0EBC00074A82F /* Reclame.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Reclame.ttf; sourceTree = "<group>"; };
 		DD8B9FAB20F0F4290074A82F /* Nag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nag.swift; sourceTree = "<group>"; };
 		DD8B9FAD20F0FA1B0074A82F /* NagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NagViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		DD60CAEB20F0E90800CECFED /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DD744A4720F1859C00C67586 /* naggrLogo.png */,
 				DD8B9FAF20F109770074A82F /* testContact.jpg */,
 				DD8B9FA920F0EBC00074A82F /* Reclame.ttf */,
 			);
@@ -196,6 +199,7 @@
 			files = (
 				DD8B9FAA20F0EBC00074A82F /* Reclame.ttf in Resources */,
 				DD60CAE420F0E36300CECFED /* LaunchScreen.storyboard in Resources */,
+				DD744A4820F1859C00C67586 /* naggrLogo.png in Resources */,
 				DD60CAE120F0E36300CECFED /* Assets.xcassets in Resources */,
 				DD8B9FB020F109770074A82F /* testContact.jpg in Resources */,
 				DD60CADF20F0E36100CECFED /* Main.storyboard in Resources */,

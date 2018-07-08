@@ -9,7 +9,7 @@
 import Foundation
 
 struct Nag {
-    let id: Int
     let name: String
     let number: String
+    let lastCalled: Date
 }
