@@ -18,7 +18,7 @@
 		DD8B9FAC20F0F4290074A82F /* Nag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8B9FAB20F0F4290074A82F /* Nag.swift */; };
 		DD8B9FAE20F0FA1B0074A82F /* NagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8B9FAD20F0FA1B0074A82F /* NagViewController.swift */; };
 		DD8B9FB020F109770074A82F /* testContact.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD8B9FAF20F109770074A82F /* testContact.jpg */; };
-		DD8B9FB420F144C80074A82F /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8B9FB320F144C80074A82F /* NavigationViewController.swift */; };
+		DD8B9FB420F144C80074A82F /* HeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8B9FB320F144C80074A82F /* HeaderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +37,7 @@
 		DD8B9FAB20F0F4290074A82F /* Nag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nag.swift; sourceTree = "<group>"; };
 		DD8B9FAD20F0FA1B0074A82F /* NagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NagViewController.swift; sourceTree = "<group>"; };
 		DD8B9FAF20F109770074A82F /* testContact.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testContact.jpg; sourceTree = "<group>"; };
-		DD8B9FB320F144C80074A82F /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		DD8B9FB320F144C80074A82F /* HeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,7 @@
 			children = (
 				DD60CADB20F0E36100CECFED /* HomePagerViewController.swift */,
 				DD8B9FAD20F0FA1B0074A82F /* NagViewController.swift */,
-				DD8B9FB320F144C80074A82F /* NavigationViewController.swift */,
+				DD8B9FB320F144C80074A82F /* HeaderViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -234,7 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD8B9FB420F144C80074A82F /* NavigationViewController.swift in Sources */,
+				DD8B9FB420F144C80074A82F /* HeaderViewController.swift in Sources */,
 				DD60CADC20F0E36100CECFED /* HomePagerViewController.swift in Sources */,
 				DD60CADA20F0E36100CECFED /* AppDelegate.swift in Sources */,
 				DD8B9FAC20F0F4290074A82F /* Nag.swift in Sources */,

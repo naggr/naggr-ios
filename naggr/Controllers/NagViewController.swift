@@ -48,5 +48,4 @@ class NagViewController: UIViewController {
         contactedButtonBox.layer.cornerRadius = 5.0
         removeButtonBox.layer.cornerRadius = 5.0
     }
-
 }

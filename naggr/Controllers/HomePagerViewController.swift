@@ -13,7 +13,6 @@ class HomePagerViewController: UIPageViewController, UIPageViewControllerDataSou
     var nagViewControllers: [NagViewController] = []
     var pageControl = UIPageControl()
     var pagerDelegate: HomePagerViewControllerDelegate?
-    var lastPendingIndex: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
