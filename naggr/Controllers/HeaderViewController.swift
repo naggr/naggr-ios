@@ -7,11 +7,18 @@
 //
 
 import UIKit
-import Contacts
-import ContactsUI
 
-class HeaderViewController: UIViewController, HomePagerViewControllerDelegate, CNContactPickerDelegate {
+class HeaderViewController: UIViewController, NagPagerViewControllerDelegate, ContactsHelperDelegate {
+    
+    // Data fields
+    let contactsHelper = ContactsHelper()
+    let storageManager = StorageManager()
+    var nags: [Nag] = [Nag]()
+    
+    // UI fields
+    var pagerViewController: NagPagerViewController?
 
+    // Outlet fields
     @IBOutlet weak var addButtonBox: UIView!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var containerView: UIView!
@@ -19,17 +26,45 @@ class HeaderViewController: UIViewController, HomePagerViewControllerDelegate, C
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Style the view
         styleView()
+        
+        // Set up the contacts helper and ask for permissions
+        contactsHelper.delegate = self
+        contactsHelper.askForContactAccess(in: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let pagerViewController = segue.destination as? HomePagerViewController {
-            pagerViewController.pagerDelegate = self
+        if let viewController = segue.destination as? NagPagerViewController {
+            // Get the pager reference and set the delegate
+            viewController.pagerDelegate = self
+            pagerViewController = viewController
+            
+            // Update the pager content
+            fetchAndSetNags()
         }
     }
     
+    private func fetchNags() throws -> [Nag] {
+        // Fetch the nags from storage
+        return try storageManager.loadNags()
+    }
+    
+    func fetchAndSetNags() {
+        // Fetch the nags
+        do {
+            nags = try fetchNags()
+        }
+        catch {
+            print("an error happened")
+        }
+        // Set the nags
+        pagerViewController?.set(nags: nags)
+    }
+    
     @IBAction func onAddClick(_ sender: Any) {
-        print("clicked")
+        // Open the contact picker
+        contactsHelper.openPicker(in: self)
     }
     
     func onPageCountChange(count: Int) {
@@ -38,6 +73,23 @@ class HeaderViewController: UIViewController, HomePagerViewControllerDelegate, C
     
     func onPageIndexChange(index: Int) {
         pageControl.currentPage = index
+    }
+    
+    func onContactSelected(name: String, number: String) {
+        // Create the nag and add it to the list
+        let nag = Nag(name: name, number: number, lastCalled: Date())
+        nags.append(nag)
+        
+        // Persist the nag
+        do {
+            try storageManager.save(nags: nags)
+        }
+        catch {
+            print("an error happened")
+        }
+        
+        // Update the pager content
+        pagerViewController?.set(nags: nags)
     }
     
     private func styleView() {

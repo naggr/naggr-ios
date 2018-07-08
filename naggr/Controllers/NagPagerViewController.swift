@@ -8,16 +8,15 @@
 
 import UIKit
 
-class HomePagerViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+class NagPagerViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
+    // Data fields
     var nagViewControllers: [NagViewController] = []
     var pageControl = UIPageControl()
-    var pagerDelegate: HomePagerViewControllerDelegate?
+    var pagerDelegate: NagPagerViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        fetchNags()
         
         dataSource = self
         delegate = self
@@ -48,12 +47,19 @@ class HomePagerViewController: UIPageViewController, UIPageViewControllerDataSou
         return nagViewController
     }
     
-    func fetchNags() {
-        for i in 0...5 {
-            let nag = Nag(name: "Mother Dearest \(i)",
-                number: "0450500490", lastCalled: Date())
-            
+    func set(nags: [Nag]) {
+        nagViewControllers = [NagViewController]()
+        for nag in nags {
             nagViewControllers.append(createControllerFor(nag))
+        }
+        resetContent()
+        pagerDelegate?.onPageCountChange(count: nagViewControllers.count)
+    }
+    
+    func resetContent() {
+        DispatchQueue.main.async {
+            self.dataSource = nil
+            self.dataSource = self
         }
     }
     
@@ -107,7 +113,7 @@ class HomePagerViewController: UIPageViewController, UIPageViewControllerDataSou
     }
 }
 
-protocol HomePagerViewControllerDelegate {
+protocol NagPagerViewControllerDelegate {
     func onPageCountChange(count: Int)
     func onPageIndexChange(index: Int)
 }

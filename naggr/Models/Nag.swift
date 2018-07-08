@@ -8,8 +8,15 @@
 
 import Foundation
 
-struct Nag {
+class Nag: Encodable, Decodable {
+    
     let name: String
     let number: String
-    let lastCalled: Date
+    var lastCalled: Date
+    
+    init(name: String, number: String, lastCalled: Date) {
+        self.name = name
+        self.number = number
+        self.lastCalled = lastCalled
+    }
 }
